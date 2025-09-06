@@ -1,0 +1,43 @@
+/*seletor de elementos*/
+body{
+    background-color: darkolivegreen;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+/*seletor de classe*/
+.cabecalho{
+    padding: 0.5rem;
+    display: flex;
+}
+.menu{
+    width: 25%;
+    background-color: rgb(15, 76, 15);  
+}
+.conteudo{
+    background-color: rgb(78, 128, 29);
+    width: 70%;
+    padding: 5rem;
+    
+
+}
+.dados{
+    list-style-type: none;  
+}
+.curriculo{
+    display: flex;
+    padding: 2rem;
+    
+}
+.foto{
+    width: 12rem ;
+    position: absolute;
+    right: 15%;
+    border-radius: 50%;       
+}
+/*seletor de id*/
+#nome{
+    font-size: xxx-large;
+    
+}
+
