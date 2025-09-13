@@ -1,0 +1,21 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header{
+    text-align: center;    
+}
+
+.formulario{    
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-style:double;
+    padding: 1rem;
+    
+
+}
+input{
+    margin-bottom: 1rem;
+    padding-bottom: 0.3rem;
+    width: 100%;
+    
+}
