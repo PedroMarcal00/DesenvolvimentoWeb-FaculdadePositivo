@@ -1,157 +1,100 @@
+/*CORPO*/
 body {
-    background-color: #700808; /* Cor de fundo vinho escuro */
-    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Fonte padrão */
-    margin: 0; /* Remove margens padrão */
-    padding: 0; /* Remove espaçamento padrão */
+    background-color: #700808;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 
-/*CABEÇALHO*/
+/*CABEÇALHO */
 .cabecalho {
-    display: flex; /* Organiza os elementos como flexbox */
-    flex-direction: column; /* Coloca nome e foto em coluna */
-    align-items: center; /* Centraliza itens na horizontal */
-    text-align: center; /* Centraliza o texto */
-    padding: 1rem; /* Espaço interno */
+    display: flex;
+    flex-direction: column;
+    align-items: center;        
+    text-align: center;
 }
 
 .foto {
-    width: 12rem; /* Largura da foto */
-    border-radius: 35%; /* Deixa a foto arredondada */
-    border: 5px solid #ffdd8c; /* Borda dourada */
+    width: 12rem;
+    border-radius: 35%;
+    border: 5px solid #ffdd8c;       
 }
 
 #nome {
-    font-size: xxx-large; /* Nome bem grande */
-    -webkit-text-stroke: 2px #000000; /* Contorno preto no texto */
-    color: #ffdd8c; /* Cor dourada */
-    text-align: center; /* Centraliza o texto */
+    font-size: xxx-large;
+    -webkit-text-stroke: 2px #000000;;    
+    color: #ffdd8c;
 }
 
-/*CURRÍCULO*/
 
+
+/*DADOS*/
 .curriculo {
-    display: flex; /* Menu e conteúdo lado a lado */
-    padding: 2rem; /* Espaço interno */
-    gap: 2rem; /* Espaço entre menu e conteúdo */
+    display: flex;
+    padding: 2rem;
 }
 
-/*MENU*/
 .menu {
-    background-color: #ff8030; /* Fundo laranja */
-    font-weight: bold; /* Texto em negrito */
-    font-size: 1.5rem; /* Tamanho da fonte */
-    border: none; /* Sem borda */
-    padding: 1rem; /* Espaço interno */
-    min-width: 200px; /* Largura mínima */
+    background-color: #ff8030;
+    font-weight: bold;
+    font-size: 2rem;
+    border: none;   
 }
 
-.menu ul {
-    list-style: none; /* Remove bolinhas */
-    padding: 0;
-    margin: 0;
-}
-
-.menu li {
-    margin-bottom: 1rem; /* Espaço entre os itens */
-}
-
-/*CONTEÚDO*/
 .conteudo {
-    flex: 1; /* Ocupa todo o espaço restante */
-    padding: 2rem; /* Espaço interno */
-    background-color: #ffdd8c; /* Fundo dourado */
-    border-radius: 1rem; /* Bordas arredondadas */
+    width: 70%;
+    padding: 5rem;
+    background-color: #ffdd8c;
 }
 
 /*LISTAS E LINKS*/
-.dados {
-    font-size: 1.3rem; /* Tamanho da fonte */
-    list-style-type: none; /* Remove marcador da lista */
+.dados{
+    font-size: xx-large;
+    list-style-type: none;
     padding: 0;
     margin: 0;
-    color: #700808; /* Texto vinho escuro */
-    font-weight: bold; /* Negrito */
+    -webkit-text-stroke: 2px ;    
+    color: #700808;
 }
 
 .link {
-    color: #000000; /* Cor preta padrão */
-    text-decoration: none; /* Remove sublinhado */
-    padding: 0.5rem; /* Área de clique maior */
-    display: block; /* Cada link ocupa toda a largura */
-    border-radius: 0.5rem; /* Bordas arredondadas */
-    transition: 0.3s; /* Transição suave */
+    color: #000000;
+    text-decoration: none;
 }
-
 .link:hover {
-    background-color: #ffdd8c; /* Fica dourado ao passar o mouse */
+    background-color: #ffdd8c;
 }
-
 .link:visited {
-    color: #700808; /* Após clicado, fica vinho escuro */
+    color: #700808;
 }
-
-/* Ícones como marcadores personalizados */
-#idade{ list-style-type:"👤"; }
-#telefone{ list-style-type:"📱"; }
-#endereco{ list-style-type:"🏠"; }
-#E-mail{ list-style-type:"✉️"; }
-#social{ list-style-type:"📷"; }
+#idade{
+    list-style-type:"👤";
+}
+#telefone{
+    list-style-type:"📱";
+}
+#endereco{
+    list-style-type:"🏠";
+}
+#E-mail{
+    list-style-type:"✉️";
+}
+#social{
+    list-style-type:"📷";
+}
 
 /*SEÇÕES*/
-#sec1, #sec2, #sec3, #sec4, #sec5 {
-    font-size: 1.2rem; /* Tamanho das fontes das seções */
-    margin-bottom: 2rem; /* Espaço entre as seções */
+#sec1{
+    font-size: x-large;
 }
-
-/*RESPONSIVIDADE*/
-
-/*TELAS MÉDIAS (TABLET)*/
-@media (max-width: 1024px) {
-    .curriculo {
-        flex-direction: column; /* Menu vai para cima */
-        padding: 1rem;
-    }
-
-    .menu {
-        font-size: 1.2rem; /* Fonte menor */
-        text-align: center; /* Centraliza itens */
-        min-width: auto; /* Largura ajustável */
-    }
-
-    .conteudo {
-        width: 100%; /* Ocupa toda largura */
-        padding: 1rem; /* Espaço menor */
-    }
-
-    #nome {
-        font-size: 2rem; /* Nome menor */
-    }
-
-    .foto {
-        width: 8rem; /* Foto menor */
-    }
+#sec2{
+    font-size: x-large;
 }
-
-/*TELAS PEQUENAS (CELULAR)*/
-@media (max-width: 600px) {
-    #nome {
-        font-size: 1.5rem; /* Nome menor ainda */
-    }
-
-    .menu {
-        font-size: 1rem; /* Fonte menor */
-        padding: 0.5rem; /* Espaço menor */
-    }
-
-    .link {
-        padding: 0.3rem; /* Links mais compactos */
-    }
-
-    .foto {
-        width: 6rem; /* Foto bem menor */
-    }
-
-    .conteudo {
-        font-size: 1rem; /* Texto reduzido */
-    }
+#sec3{
+    font-size: x-large;
+}
+#sec4{
+    font-size: x-large;
+}
+#sec5{
+    font-size: x-large;
 }
